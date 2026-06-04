@@ -1,0 +1,102 @@
+[bar.default]
+center = [ "media", "audio_visualizer" ]
+end = [
+    "tray",
+    "notifications",
+    "clipboard",
+    "network",
+    "bluetooth",
+    "volume",
+    "brightness",
+    "battery",
+    "control-center",
+    "session"
+]
+margin_edge = 4.0
+margin_ends = 4.0
+padding = 50
+start = [ "launcher", "wallpaper", "workspaces", "clock", "date" ]
+
+[calendar]
+enabled = true
+
+[[calendar.accounts]]
+id    = "personal"
+type  = "google"
+name  = "Personal"
+
+[hooks]
+started = "noctalia msg screen-lock"
+
+[idle]
+behavior_order = [ "lock", "screen-off", "suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = false
+    timeout = 660
+
+    [idle.behavior.suspend]
+    action = "suspend"
+    enabled = false
+    lock_before_suspend = true
+    timeout = 900
+
+[shell]
+font_family = "JetBrainsMono Nerd Font"
+settings_show_advanced = true
+telemetry_enabled = false
+
+    [shell.panel]
+    clipboard_placement = "floating"
+
+    [shell.screenshot]
+    copy_to_clipboard = true
+
+[system.monitor]
+cpu_poll_seconds = 1
+
+[theme]
+source = "wallpaper"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "gtk3", "hyprland", "kitty", "qt" ]
+    community_ids = [ "yazi" ]
+
+[wallpaper]
+directory = "/home/maxfh/Pictures/wallpapers"
+
+    [wallpaper.default]
+    path = "/home/maxfh/Pictures/wallpapers/mountains_blue.png"
+
+    [wallpaper.last]
+    path = "/home/maxfh/Pictures/wallpapers/mountains_blue.png"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/maxfh/Pictures/wallpapers/mountains_blue.png"
+
+    [wallpaper.monitors.DP-3]
+    path = "/home/maxfh/Pictures/wallpapers/mountains_blue.png"
+
+[weather]
+auto_locate = true
+unit = "imperial"
+
+[widget.audio_visualizer]
+bands = 64
+centered = false
+mirrored = false
+width = 149.0
+
+[widget.date]
+format = "{:%a %b %d}"
+
+[widget.media]
+hide_when_no_media = true
+max_length = 149.0
+title_scroll = "on_hover"

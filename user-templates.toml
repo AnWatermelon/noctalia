@@ -1,0 +1,3 @@
+[theme.templates.user.discord-translucence]
+input_path  = "./templates/Translucence.theme.css"
+output_path = "/home/maxfh/.config/BetterDiscord/themes/Translucence.theme.css"
