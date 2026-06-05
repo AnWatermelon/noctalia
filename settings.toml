@@ -57,6 +57,7 @@ telemetry_enabled = false
 
     [shell.screenshot]
     copy_to_clipboard = true
+    directory         = "/home/maxfh/Pictures/screenshots/"
 
 [system.monitor]
 cpu_poll_seconds = 1
