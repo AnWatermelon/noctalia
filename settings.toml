@@ -51,6 +51,7 @@ behavior_order = [ "lock", "screen-off", "suspend" ]
 font_family = "JetBrainsMono Nerd Font"
 settings_show_advanced = true
 telemetry_enabled = false
+polkit_agent = true
 
     [shell.panel]
     clipboard_placement = "floating"
