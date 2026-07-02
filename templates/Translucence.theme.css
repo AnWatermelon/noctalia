@@ -20,11 +20,11 @@
 	--app-radius: 8px;
 
 	/* ACCENT HSL AND TEXT COLOR SETTINGS */
-	--accent-hue: {{ colors.primary.default.hue}};
-    --accent-saturation: {{ colors.primary.default.saturation}};
-    --accent-lightness: {{ colors.primary.default.lightness}};
+	--accent-hue: {{ colors.primary.default.hue }};
+    --accent-saturation: {{ colors.primary.default.saturation }};
+    --accent-lightness: {{ colors.primary.default.lightness }};
 	--accent-opacity: 1;
-	--accent-text-color: hsl(0,0%,0%);
+	--accent-text-color: {{ colors.secondary.default.hsl }};
 
 	/* SIDEBARS AND CHAT AREA COLOR SETTINGS */
 	--sidebar-color: hsl(0,0%,0%,0.34);
@@ -88,9 +88,9 @@
 		--text-strong: hsl(0,0%,100%);
 
 		/* ICON COLOR SETTINGS */
-		--icon-primary: hsl(0,0%,96%);
-		--icon-secondary: hsl(0,0%,84%);
-		--icon-tertiary: hsl(0,0%,71%);
+		--icon-primary: {{ colors.primary.default.hsl }};
+		--icon-secondary: {{ colors.secondary.default.hsl }};
+		--icon-tertiary: {{ colors.tertiary.default.hsl }};
 
 		/* INTERACTIVE COLOR SETTINGS */
 		--interactive-normal: hsl(0,0%,79%);
