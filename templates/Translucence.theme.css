@@ -64,7 +64,7 @@
 
 	/* POPOUT SETTINGS */
     --popout-color: hsl(0,0%,0%,0.46);
-    --popout-blur: 6px;
+    --popout-blur: 1px;
     --popout-radius: 18px;
     --popout-shadow: 0 20px 40px hsl(0,0%,0%,0.44);
     --popout-shadow-border: inset 0 1px 1px hsl(0,100%,100%,0.35), inset 0 -1px 2px hsl(0,0%,0%,0.25), inset 0 0 0 1px hsl(0,100%,100%,0.04); /* Set this variable to none to remove the popout liquid glass border */
@@ -79,8 +79,8 @@
 @supports (color: color-mix(in lch, red, blue)) {
 	.theme-dark {
 		/* TEXT COLOR SETTINGS */
-		--text-primary: hsl(0,0%,100%);
-		--text-secondary: hsl(0,0%,77%);
+		--text-primary: {{ colors.primary.default.hsl }};
+		--text-secondary: {{ colors.secondary.default.hsl }};
 		--text-default: hsl(0,0%,86%);
 		--text-muted: hsl(0,0%,72%);
 		--channels-default: hsl(0,0%,73%);
